@@ -27,10 +27,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* a:visited {
-  color: black;
-} */
-
 .header-right {
   text-align: center;
 }
@@ -67,8 +63,8 @@ a:hover {
   background-image: url('https://78.media.tumblr.com/4ab8d6f6998ad5118aca7e576c4442fc/tumblr_p3e05wZ0wU1u86ylfo1_1280.jpg') !important;
   /* background-image: url('https://78.media.tumblr.com/0e8822d580f820938d692693228e8f13/tumblr_p3e6itFGSU1u86ylfo1_1280.jpg') !important; */
   background-size: cover !important;
-  background-attachment: fixed;
-  overflow: scroll;
+  /* background-attachment: fixed;
+  overflow: scroll; */
 }
 
 .landing-page-text {
@@ -86,24 +82,34 @@ a:hover {
 /* ABOUT PAGE */
 .about {
   text-align: center;
-  padding: 5%;
   font-family: 'Montserrat', sans-serif;
-  overflow: scroll;
   background-color: rgba(219,219,219, .25);
-  height: 100vh;
-  position: fixed;
+  /* height: 100vh; */
 }
 
 .about-text {
   font-size: 14px;
-  overflow: scroll;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  display: 'grid';
+    /* overflow: scroll; */
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1
     -moz-animation: fadein 3s; /* Firefox < 16 */
      -ms-animation: fadein 3s; /* Internet Explorer */
       -o-animation: fadein 3s; /* Opera < 12.1 */
          animation: fadein 3s;
 }
 
+/* .about-text.headshot {
+  width: "200px";
+} */
+
+.headshot-container {
+  overflow: hidden;
+}
+
+.headshot {
+  max-width: 200px;
+  border-radius: 100%;
+}
 
 
 @keyframes fadein {
