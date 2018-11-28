@@ -4,6 +4,7 @@ import React from 'react';
 const LandingPage = (props) => {
 
   return(
+    // LANDING PAGE
     <div className="landing-page">
       <div className="landing-page-text">
         <div style={{"font-size": "36px"}}>
