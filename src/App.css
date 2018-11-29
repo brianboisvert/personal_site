@@ -93,8 +93,10 @@ a:hover {
 }
 
 .about-text {
+  margin-top: 1.5em;
   font-size: 1em;
   display: 'grid';
+  grid-template-columns: 1fr 8fr;
     /* overflow: scroll; */
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1
     -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -131,6 +133,25 @@ a:hover {
 .headshot {
   max-width: 200px;
   border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spin:after {
+  color: red;
+  content: "";
+  animation: word 10s linear infinite;
+}
+
+@keyframes word {
+  0% { content: "full-stack" }
+  18% { content: "JavaScript" }
+  36% { content: "Ruby" }
+  54% { content: "React" }
+  72% { content: "Rails" }
+  90% { content: "WordPress" }
+  100% { content: "full-stack" }
 }
 
 

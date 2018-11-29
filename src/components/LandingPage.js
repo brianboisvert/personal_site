@@ -25,8 +25,9 @@ const LandingPage = (props) => {
           <div className="about-text">
             <div className="typer">
               <h1>Hey there, I'm Brian. </h1>
-              <p>And I'm a full-stack developer.</p>
-
+              <span>
+                and I'm a [ <span className="spin"></span> ] developer.
+              </span>
             </div>
           </div>
         </div>
