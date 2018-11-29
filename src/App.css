@@ -81,14 +81,19 @@ a:hover {
 
 /* ABOUT PAGE */
 .about {
+  padding: 2em;
+  margin-bottom: 2em;
+  border-top: 2em solid black;
+  border-bottom: 2em solid black;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   background-color: rgba(219,219,219, .25);
-  /* height: 100vh; */
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .about-text {
-  font-size: 14px;
+  font-size: 1em;
   display: 'grid';
     /* overflow: scroll; */
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1
@@ -98,12 +103,29 @@ a:hover {
          animation: fadein 3s;
 }
 
-/* .about-text.headshot {
-  width: "200px";
-} */
+.typer {
+  display: inline-block;
+}
 
-.headshot-container {
-  overflow: hidden;
+.typer h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+  typing 7s steps(40, end) infinite alternate,
+  blink-caret .75s step-end infinite,
+  blink .5s infinite;
+}
+
+@keyframes typing {
+  0% { width: 1%; }
+  35% { width: 99%; }
+}
+
+@keyframes blink {
+  from {border-right: .1em solid black;}
+  to {border-right: .1em solid white}
 }
 
 .headshot {
