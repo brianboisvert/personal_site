@@ -93,7 +93,7 @@ a:hover {
 }
 
 .about-text {
-  margin-top: 1.5em;
+  margin-top: 2em;
   font-size: 1em;
   display: 'grid';
   grid-template-columns: 1fr 8fr;
@@ -110,10 +110,11 @@ a:hover {
 }
 
 .typer h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  font-family: "Times New Roman";
+  overflow: hidden;
+  border-right: .1em solid #000;
+  white-space: nowrap;
+  margin: 0 auto;
   animation:
   typing 7s steps(40, end) infinite alternate,
   blink-caret .75s step-end infinite,
@@ -126,12 +127,12 @@ a:hover {
 }
 
 @keyframes blink {
-  from {border-right: .1em solid black;}
+  from {border-right: .1em solid #000;}
   to {border-right: .1em solid rgba(255,255,255, .0)}
 }
 
 .headshot {
-  max-width: 200px;
+  max-width: 175px;
   border-radius: 100%;
   display: block;
   margin-left: auto;
