@@ -24,7 +24,7 @@ const LandingPage = (props) => {
             <img className="headshot" src={headshot} alt="portrait" />
           <div className="about-text">
             <div className="typer">
-              <h1>Hey there, I'm Brian.</h1>
+              <h1>Hey there, I'm Brian. </h1>
               <p>And I'm a full-stack developer.</p>
 
             </div>
