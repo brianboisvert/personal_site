@@ -4,25 +4,8 @@ import headshot from '../images/headshot.jpg';
 
 class LandingPage extends React.Component {
 
-  myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
 
 render() {
-
-  window.onscroll = function() {myFunction()};
-
-  // Get the navbar
-  var navbar = document.getElementById("navbar");
-
-  // Get the offset position of the navbar
-  var sticky = navbar.offsetTop;
-
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 
   return(
     <div>
@@ -51,9 +34,21 @@ render() {
         </div>
       </div>
 
-      <div>
-
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2016</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
       </div>
+    
 
 
     </div>
