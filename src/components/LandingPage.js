@@ -34,21 +34,47 @@ render() {
         </div>
       </div>
 
-      <div class="timeline">
-        <div class="container left">
-          <div class="content">
-            <h2>2017</h2>
-            <p>Lorem ipsum..</p>
+      <div class="timeline-container">
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2 class="event">Graduated UMass Amherst</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>2016</h2>
-            <p>Lorem ipsum..</p>
+          <div class="container right">
+            <div class="content">
+              <h2 class="event">Yelp, Account Executive</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2 class="event">Tory Burch, Assistant Merchant, Shoes</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2 class="event">French Ministry of Education, English Language Assistent</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2 class="event">Flatiron School, Full-Stack Coding Bootcamp</h2>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2 class="event">Big Think, Developer</h2>
+              <p>Lorem ipsum..</p>
+            </div>
           </div>
         </div>
       </div>
-    
+
 
 
     </div>

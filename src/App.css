@@ -82,7 +82,7 @@ a:hover {
 /* ABOUT PAGE */
 .about {
   padding: 2em;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
   border-top: 2em solid black;
   border-bottom: 2em solid black;
   text-align: center;
@@ -186,11 +186,15 @@ a:hover {
 }
 
 /* TIMELINE */
+.timeline-container {
+  background-color: silver;
+  margin-bottom: 39px;
+}
+
 .timeline {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
-  background: pink;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -198,7 +202,7 @@ a:hover {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: red;
+  background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -207,10 +211,14 @@ a:hover {
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+  padding: .1px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
+}
+
+.event {
+  padding-top: 6px;
 }
 
 /* The circles on the timeline */
@@ -219,9 +227,9 @@ a:hover {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: 50px;
-  background-color: purple;
-  border: 4px solid #FF9F55;
+  right: 25px;
+  background-color: white;
+  border: 4px solid red;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -239,13 +247,13 @@ a:hover {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: 25px;
 }
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: grey;
+  padding: 0px 30px;
+  background-color: white;
   position: relative;
   border-radius: 6px;
 }
