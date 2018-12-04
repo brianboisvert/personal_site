@@ -204,11 +204,6 @@ a:hover {
 .timeline h3 {
   font-size: 14px;
 }
-
-.timeline ul {
-  padding-bottom: 15px;
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
