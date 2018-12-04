@@ -6,21 +6,22 @@ class Timeline extends React.Component {
   render() {
 
     function revealContent(number) {
-      console.log('hide-description ' + number)
       let hidden_class = 'hide-description ' + number;
       let shown_class = 'show-description ' + number;
       let hidden_element = document.getElementsByClassName(hidden_class)[0];
       let shown_element = document.getElementsByClassName(shown_class)[0];
 
-      if (element) {
-        element.classList.remove('hide-description');
-        element.classList.add('show-description');
+      if (hidden_element) {
+        hidden_element.classList.remove('hide-description');
+        hidden_element.classList.add('show-description');
+      } else {
+        shown_element.classList.remove('show-description');
+        shown_element.classList.add('hide-description');
       }
       //   element.classList.remove('hide-description');
       //   element.classList.add('show-description')
       // element.classList.add('show-description');
 
-      console.log(element);
       // element.classList.toggle("show-description");
 
     }
