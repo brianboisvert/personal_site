@@ -38,14 +38,15 @@ render() {
         <div class="timeline">
           <div class="container left">
             <div class="content">
-              <h2 class="event">Graduated UMass Amherst</h2>
-              <p>Lorem ipsum..</p>
+              <h2 class="event">UMass Amherst</h2>
+              <h3>Graduated, BBA Business Management</h3>
+              <ul></ul>
             </div>
           </div>
           <div class="container right">
             <div class="content">
-              <h2 class="event">Yelp, Account Executive</h2>
-              <p>Lorem ipsum..</p>
+              <h2 class="event">Yelp</h2>
+              <h3>Account Executive</h3>
             </div>
           </div>
           <div class="container left">
