@@ -7,8 +7,20 @@ class Timeline extends React.Component {
 
     function revealContent(number) {
       console.log('hide-description ' + number)
-      let class_name = 'hide-description ' + number
-      let element = document.getElementsByClassName(class_name);
+      let hidden_class = 'hide-description ' + number;
+      let shown_class = 'show-description ' + number;
+      let hidden_element = document.getElementsByClassName(hidden_class)[0];
+      let shown_element = document.getElementsByClassName(shown_class)[0];
+
+      if (element) {
+        element.classList.remove('hide-description');
+        element.classList.add('show-description');
+      }
+      //   element.classList.remove('hide-description');
+      //   element.classList.add('show-description')
+      // element.classList.add('show-description');
+
+      console.log(element);
       // element.classList.toggle("show-description");
 
     }
