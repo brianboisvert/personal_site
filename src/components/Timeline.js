@@ -33,7 +33,9 @@ class Timeline extends React.Component {
             <div class="content" onClick={() => revealContent(1)}>
               <h2 class="event">UMass Amherst</h2>
               <h3>Graduated, BBA Business Management</h3>
-              <div class="hide-description 1">TEST TEST TEST</div>
+              <div class="show-container">
+                <div class="hide-description 1">TEST TEST TEST</div>
+              </div>
             </div>
           </div>
           <div class="container right">

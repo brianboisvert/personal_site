@@ -274,4 +274,8 @@ a:hover {
 .show-description {
   display: inline;
   overflow: auto;
+  position: absolute;
+  width: 100%;
+  left: 1%;
+  background-color: white;
 }
