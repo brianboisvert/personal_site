@@ -47,24 +47,28 @@ class Timeline extends React.Component {
             <div class="content">
               <h2 class="event">Tory Burch</h2>
               <h3>Assistant Merchant, Shoes</h3>
+              <div class="hide-description 3">TEST TEST TEST </div>
             </div>
           </div>
-          <div class="container right">
+          <div class="container right" onClick={() => revealContent(4)}>
             <div class="content">
               <h2 class="event">French Ministry of Education</h2>
               <h3>English Language Assistent</h3>
+              <div class="hide-description 4">TEST TEST TEST </div>
             </div>
           </div>
-          <div class="container left">
+          <div class="container left" onClick={() => revealContent(5)}>
             <div class="content">
               <h2 class="event">Flatiron School</h2>
               <h3>Full-Stack Coding Bootcamp</h3>
+              <div class="hide-description 5">TEST TEST TEST </div>
             </div>
           </div>
-          <div class="container right">
+          <div class="container right" onClick={() => revealContent(6)}>
             <div class="content">
               <h2 class="event">Big Think</h2>
               <h3>Developer</h3>
+              <div class="hide-description 6">TEST TEST TEST </div>
             </div>
           </div>
         </div>
